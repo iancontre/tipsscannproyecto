@@ -1,42 +1,42 @@
 
 #Mensaje de bienvenida
-print("BIENVENIDO A TIPS-SCAN ¡REGÍSTRATE!")
-print("""""""""""")
+#print("BIENVENIDO A TIPS-SCAN ¡REGÍSTRATE!")
+#print("""""""""""")
 #Registro e inicio de sesión
-registros = {} #Aquí almaceno los registros como (Diccionario)
+#registros = {} #Aquí almaceno los registros como (Diccionario)
 #Registro Cliente
-def registro():
-    nombre = input("Ingresa tu nombre completo: ")
-    correo = input("Ingresa tu correo electrónico: ")
-    telefono = input("Ingresa número de teléfono: ")
-    contraseña = input("Ingresa contraseña que deseas asignar: ")
-    registros[correo] = (nombre, telefono, contraseña)
-    print("¡Muy bien!, ya eres parte de nuestro sistema, ¡registro exitoso!")
+#def registro():
+    #nombre = input("Ingresa tu nombre completo: ")
+    #correo = input("Ingresa tu correo electrónico: ")
+    #telefono = input("Ingresa número de teléfono: ")
+    #contraseña = input("Ingresa contraseña que deseas asignar: ")
+    #registros[correo] = (nombre, telefono, contraseña)
+    #print("¡Muy bien!, ya eres parte de nuestro sistema, ¡registro exitoso!")
 
-print("""""""""""")
+#print("""""""""""")
 #Inicio de Sesión usuario(correo y contraseña)
-def sesion():
-    print("BIENVENIDO A TIPS-SCAN ¡inicia Sesión!")
-    correo = input("Ingresa tu correo electrónico que registraste con nosotros: ")
-    contraseña = input("Ingrese tu contraseña: ")
-    if correo in registros and registros[correo][2] == contraseña:
-        print("¡Inicio de sesión exitoso!")
-        nombre, telefono, _ = registros[correo]
-        print("Nombre:", nombre)
+#def sesion():
+    #print("BIENVENIDO A TIPS-SCAN ¡inicia Sesión!")
+    #correo = input("Ingresa tu correo electrónico que registraste con nosotros: ")
+    #contraseña = input("Ingrese tu contraseña: ")
+    #if correo in registros and registros[correo][2] == contraseña:
+        #print("¡Inicio de sesión exitoso!")
+        #nombre, telefono, _ = registros[correo]
+        #print("Nombre:", nombre)
          
-    if sesion != correo and contraseña:
-        print("Correo o contraseña incorrecto")
+    #if sesion != correo and contraseña:
+        #print("Correo o contraseña incorrecto")
         
-    def recuperar_contrasena():
-        recuperar=input("¿Desea recuperar contrasena? :")
-        if recuperar== "si":
-            nuevacontra=input("Digite la nueva contraseña: ")
-            print("Contraseña actualizada")
-        else:
-            print("Te devolveremos al inicio de sesión para que vuelvas a intentar")
-            sesion()
+    #def recuperar_contrasena():
+        #recuperar=input("¿Desea recuperar contrasena? :")
+        #if recuperar== "si":
+            #nuevacontra=input("Digite la nueva contraseña: ")
+            #print("Contraseña actualizada")
+        #else:
+            #print("Te devolveremos al inicio de sesión para que vuelvas a intentar")
+            #sesion()
         
-    recuperar_contrasena()
+    #recuperar_contrasena()
     
     
         
@@ -58,8 +58,8 @@ def sesion():
 
         
 
-registro()
-sesion()
+#registro()
+#sesion()
 
 
 
